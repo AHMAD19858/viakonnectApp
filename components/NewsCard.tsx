@@ -9,6 +9,7 @@ const NewsCard = ({item }) => {
         <Text className='font-bold text-lg w-full'>{item.title}</Text>
         <Text className='text-sm'> By {item.author}</Text>
         <Image 
+         resizeMode={'contain'}
          className='w-full h-40 mt-2 '
           source={item.urlToImage ? { uri: item.urlToImage } :  require('../assets/images/empty.png')}
         />
